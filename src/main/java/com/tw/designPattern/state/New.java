@@ -15,7 +15,7 @@ public class New extends ThreadState{
         if ("新建状态".equals(stateName)){
             threadContext.setThreadState(new Runnable());
         }else {
-            System.out.println("当前线程不是新建状态，不能嗲用start()方法。");
+            System.out.println("当前线程不是新建状态，不能调用start()方法。");
         }
     }
 }

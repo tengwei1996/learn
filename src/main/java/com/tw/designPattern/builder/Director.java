@@ -9,9 +9,7 @@ public class Director {
     }
 
     public Product buildProduct(){
-        builder.buildPartA();
-        builder.buildPartB();
-        builder.buildPartC();
+        builder.buildPartA().buildPartB().buildPartC();
         return builder.getProduct();
     }
 }

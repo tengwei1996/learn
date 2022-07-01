@@ -8,9 +8,10 @@ public class LeaveApprovalTest {
         Leader departmentHead = new DepartmentHead();
         Leader dean = new Dean();
         Leader deanOfStudies = new DeanOfStudies();
-        classAdviser.setNext(departmentHead);
-        departmentHead.setNext(dean);
-        dean.setNext(deanOfStudies);
+        classAdviser.setNext(departmentHead).setNext(dean).setNext(deanOfStudies);
+//        classAdviser.setNext(departmentHead);
+//        departmentHead.setNext(dean);
+//        dean.setNext(deanOfStudies);
         // 提交请求
         classAdviser.handleRequest(20);
     }

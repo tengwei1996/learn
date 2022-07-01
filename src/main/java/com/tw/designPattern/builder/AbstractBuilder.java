@@ -17,7 +17,7 @@ package com.tw.designPattern.builder;
  *  产品角色（Product）：它是包含多个组成部件的复杂对象，由具体建造者来创建其各个零部件。
  *  抽象建造者（Builder）：它是一个包含创建产品各个子部件的抽象方法的接口，通常还包含一个返回复杂产品的方法 getResult()。
  *  具体建造者(Concrete Builder）：实现 Builder 接口，完成复杂产品的各个部件的具体创建方法。
- *  指挥者（Director）：它调用建造者对象中的部件构造与装配方法完成复杂对象的创建，在指挥者中不涉及具体产品的信息。、
+ *  指挥者（Director）：它调用建造者对象中的部件构造与装配方法完成复杂对象的创建，在指挥者中不涉及具体产品的信息。
  * 应用场景：
  *  相同的方法，不同的执行顺序，产生不同的结果。
  *  多个部件或零件，都可以装配到一个对象中，但是产生的结果又不相同。
@@ -38,11 +38,11 @@ public abstract class AbstractBuilder {
 
     public Product product = new Product();
 
-    public abstract void buildPartA();
+    public abstract AbstractBuilder buildPartA();
 
-    public abstract void buildPartB();
+    public abstract AbstractBuilder buildPartB();
 
-    public abstract void buildPartC();
+    public abstract AbstractBuilder buildPartC();
 
     public Product getProduct(){
         return product;

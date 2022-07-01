@@ -46,8 +46,9 @@ public abstract class Leader {
      * 设置下一节点
      * @param next
      */
-    public void setNext(Leader next){
+    public Leader setNext(Leader next){
         this.next = next;
+        return this;
     }
 
     /**
