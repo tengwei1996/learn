@@ -2,6 +2,9 @@ package com.tw.designPattern.visitor.demo;
 
 import java.util.Random;
 
+/**
+ * 工程师 具体元素 被访问者
+ */
 public class Engineer implements Employee {
 
     private String name;
@@ -10,7 +13,7 @@ public class Engineer implements Employee {
 
     Engineer(String name){
         this.name = name;
-        this.kpi = new Random(10).nextInt();
+        this.kpi = new Random().nextInt(10);
     }
 
     public String getName() {

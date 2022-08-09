@@ -2,6 +2,9 @@ package com.tw.designPattern.decorator.cake;
 
 import java.math.BigDecimal;
 
+/**
+ * 具体装饰者
+ */
 public class MangoCakeDecorator extends Decorator{
 
     public MangoCakeDecorator(Cake cake) {

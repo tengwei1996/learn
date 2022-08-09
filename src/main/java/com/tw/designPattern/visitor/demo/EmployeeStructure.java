@@ -3,6 +3,9 @@ package com.tw.designPattern.visitor.demo;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 结构对象
+ */
 public class EmployeeStructure {
 
     List<Employee> list = new ArrayList<>();

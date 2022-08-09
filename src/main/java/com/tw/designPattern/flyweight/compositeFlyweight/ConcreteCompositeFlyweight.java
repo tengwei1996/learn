@@ -33,7 +33,7 @@ public class ConcreteCompositeFlyweight implements Flyweight{
      */
     @Override
     public void operation(String state) {
-        Flyweight flyweight = null;
+        Flyweight flyweight;
         for (Character key : flyweightMap.keySet()){
             flyweight = flyweightMap.get(key);
             flyweight.operation(state);

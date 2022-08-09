@@ -1,7 +1,7 @@
 package com.tw.designPattern.strategy;
 
 /**
- * 坐飞机（具体策略（Concrete Strategy）类）
+ * 坐飞机 具体策略类
  */
 public class PlaneWay implements TravelWay{
 

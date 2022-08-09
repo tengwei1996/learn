@@ -1,8 +1,11 @@
 package com.tw.designPattern.flyweight.compositeFlyweight;
 
+/**
+ * 单纯享元对象(具体享元角色)
+ */
 public class ConcreteFlyweight implements Flyweight{
 
-    private Character intrinsicState = null;
+    private Character intrinsicState;
 
     public ConcreteFlyweight(Character intrinsicState){
         this.intrinsicState = intrinsicState;
@@ -16,7 +19,7 @@ public class ConcreteFlyweight implements Flyweight{
      */
     @Override
     public void operation(String state) {
-        System.out.println("Intrinsic State = " + this.intrinsicState);
-        System.out.println("Extrinsic State = " + state);
+        System.out.println("内部状态 Intrinsic State = " + this.intrinsicState);
+        System.out.println("外部状态 Extrinsic State = " + state);
     }
 }

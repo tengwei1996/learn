@@ -1,7 +1,7 @@
 package com.tw.designPattern.adapter.objectAdapter;
 
 /**
- * 电能发动机
+ * 适配者(Adaptee)电能发动机
  */
 public class ElectricMotor {
 

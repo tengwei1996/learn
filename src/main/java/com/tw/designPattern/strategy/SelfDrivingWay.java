@@ -1,7 +1,7 @@
 package com.tw.designPattern.strategy;
 
 /**
- * 自驾（具体策略（Concrete Strategy）类）
+ * 自驾 具体策略类
  */
 public class SelfDrivingWay implements TravelWay {
 

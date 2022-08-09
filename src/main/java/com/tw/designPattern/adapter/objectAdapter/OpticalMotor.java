@@ -1,7 +1,7 @@
 package com.tw.designPattern.adapter.objectAdapter;
 
 /**
- * 光能发动机
+ * 适配者(Adaptee)光能发动机
  */
 public class OpticalMotor {
 

@@ -2,6 +2,9 @@ package com.tw.designPattern.visitor.demo;
 
 import java.util.Random;
 
+/**
+ * 管理者 具体元素 被访问者
+ */
 public class Manager implements Employee{
 
 
@@ -11,7 +14,7 @@ public class Manager implements Employee{
 
     Manager(String name){
         this.name = name;
-        this.kpi = new Random(10).nextInt();
+        this.kpi = new Random().nextInt(10);
     }
 
     public String getName() {

@@ -1,6 +1,9 @@
 package com.tw.designPattern.iterator;
 
-public interface Iterator {
+/**
+ * 抽象迭代器角色
+ */
+public interface Iterator<T> {
 
     Object first();
 

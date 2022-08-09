@@ -1,7 +1,7 @@
 package com.tw.designPattern.adapter.objectAdapter.twoWayAdapter;
 
 /**
- * 双向适配器
+ * 双向适配器(Adapter)
  */
 public class TwoWayAdapter implements TwoWayTarget,TwoWayAdaptee{
 

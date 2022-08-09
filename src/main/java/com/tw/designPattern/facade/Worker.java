@@ -1,5 +1,8 @@
 package com.tw.designPattern.facade;
 
+/**
+ * 员工 （子系统角色）
+ */
 public class Worker {
 
     private String name;

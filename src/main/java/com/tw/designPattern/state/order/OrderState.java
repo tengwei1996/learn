@@ -1,5 +1,8 @@
 package com.tw.designPattern.state.order;
 
+/**
+ * 订单状态 抽象状态角色
+ */
 public abstract class OrderState {
 
     protected OrderContext context;

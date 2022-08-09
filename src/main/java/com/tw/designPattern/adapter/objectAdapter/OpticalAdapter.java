@@ -1,7 +1,7 @@
 package com.tw.designPattern.adapter.objectAdapter;
 
 /**
- * 光能适配器
+ * 适配器(Adapter)光能适配器
  */
 public class OpticalAdapter implements Motor{
 

@@ -2,32 +2,33 @@ package com.tw.designPattern.iterator;
 
 import java.util.List;
 
-public class ConcreteIterator implements Iterator{
+/**
+ * 具体迭代器角色
+ */
+public class ConcreteIterator<T> implements Iterator<T>{
 
-    private List<Object> list = null;
+    private List<T> list;
 
     private int index = -1;
 
-    public ConcreteIterator(){}
-
-    public ConcreteIterator(List<Object> list){
+    public ConcreteIterator(List<T> list){
         this.list = list;
     }
 
     @Override
-    public Object first() {
+    public T first() {
         index = 0;
-        Object o = list.get(index);
+        T o = list.get(index);
         return o;
     }
 
     @Override
-    public Object next() {
-        Object obj = null;
+    public T next() {
+        T t = null;
         if (hasNext()){
-            obj = list.get(++index);
+            t = list.get(++index);
         }
-        return obj;
+        return t;
     }
 
     @Override

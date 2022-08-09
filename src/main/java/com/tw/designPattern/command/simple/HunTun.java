@@ -1,18 +1,19 @@
 package com.tw.designPattern.command.simple;
 
 /**
- * 馄饨命令（具体命令）
+ * 馄饨 具体命令类
  */
 public class HunTun implements Breakfast{
 
-    private HunTunChef receiver;
+    private Chef receiver;
 
     public HunTun(){
-        receiver = new HunTunChef();
+        receiver = new Chef();
     }
 
     @Override
-    public void cooking() {
-        receiver.cooking();
+    public void cook() {
+        receiver.cookHunTun();
+        System.out.println("馄饨真好吃，下次还吃！");
     }
 }

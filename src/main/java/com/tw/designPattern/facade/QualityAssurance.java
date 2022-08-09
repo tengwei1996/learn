@@ -1,5 +1,8 @@
 package com.tw.designPattern.facade;
 
+/**
+ * 测试攻城狮
+ */
 public class QualityAssurance extends Worker{
 
     public QualityAssurance(String name,String job){

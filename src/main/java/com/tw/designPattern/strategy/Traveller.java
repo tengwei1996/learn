@@ -1,7 +1,7 @@
 package com.tw.designPattern.strategy;
 
 /**
- * 旅行者（环境（Context）类）
+ * 旅行者 环境类
  */
 public class Traveller {
 

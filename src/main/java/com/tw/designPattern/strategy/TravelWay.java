@@ -37,7 +37,7 @@ package com.tw.designPattern.strategy;
  */
 
 /**
- * 出行的方式（抽象策略（Strategy）类）
+ * 出行的方式 抽象策略类
  */
 public interface TravelWay {
 

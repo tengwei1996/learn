@@ -17,24 +17,8 @@ public class IteratorTest implements Serializable{
             System.out.println(next.toString() + "\t");
         }
         Object first = iterator.first();
-        System.out.println("\nFirst:" + first.toString());
+        System.out.println("First:" + first.toString());
 
 
-    }
-
-
-    public void prototype() throws IOException, ClassNotFoundException {
-        ByteArrayOutputStream bos = new ByteArrayOutputStream();
-        ObjectOutputStream oos = new ObjectOutputStream(bos);
-        oos.writeObject(this);
-
-        ByteArrayInputStream bis = new ByteArrayInputStream(bos.toByteArray());
-        ObjectInputStream ois = new ObjectInputStream(bis);
-        IteratorTest o = (IteratorTest)ois.readObject();
-        System.out.println(o);
-        ois.close();
-        bis.close();
-        oos.close();
-        bos.close();
     }
 }

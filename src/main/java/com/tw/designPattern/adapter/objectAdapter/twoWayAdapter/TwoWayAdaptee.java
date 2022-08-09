@@ -1,9 +1,9 @@
 package com.tw.designPattern.adapter.objectAdapter.twoWayAdapter;
 
 /**
- * 目标适配者
+ * 目标适配者(Adaptee)
  */
 public interface TwoWayAdaptee {
 
-    public void specificRequest();
+    void specificRequest();
 }

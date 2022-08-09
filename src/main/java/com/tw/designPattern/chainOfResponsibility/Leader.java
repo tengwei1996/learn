@@ -44,25 +44,64 @@ public abstract class Leader {
 
     /**
      * 设置下一节点
+     *
      * @param next
      */
-    public Leader setNext(Leader next){
+    public void setNext(Leader next) {
         this.next = next;
-        return this;
     }
 
     /**
      * 获取节点
+     *
      * @return
      */
-    public Leader getNext(){
+    public Leader getNext() {
         return next;
     }
 
     /**
      * 处理请求的方法
+     *
      * @param leaveDays
      */
     public abstract void handleRequest(int leaveDays);
+
+
+    public static class BuildLeader {
+
+        private Leader leader;
+
+        public BuildLeader addLeader(Leader leader) {
+            // 如果this.leader为空，说明是添加第一个节点
+            if (this.leader == null) {
+                this.leader = leader;
+                return this;
+            }
+            Leader next = this.leader.getNext();
+            while (true) {
+                // 如果this.leader.getNext()为空说明再加第二个节点
+                if (next == null) {
+                    this.leader.setNext(leader);
+                    return this;
+                } else {
+                    // 如果this.leader.getNext()不为空的话说明已经加超过两个节点了
+                    // 无线循环找到最后一个节点，然后setNext()设置节点
+                    Leader nextNext = next.getNext();
+                    if (nextNext == null) {
+                        next.setNext(leader);
+                        return this;
+                    } else if (nextNext.getNext() == null) {
+                        nextNext.setNext(leader);
+                        return this;
+                    }
+                }
+            }
+        }
+
+        public Leader build() {
+            return this.leader;
+        }
+    }
 
 }

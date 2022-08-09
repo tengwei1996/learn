@@ -41,12 +41,28 @@ package com.tw.designPattern.composite.transparent;
  */
 public interface Component {
 
+    /**
+     * 添加节点
+     * @param component
+     */
     void add(Component component);
 
+    /**
+     * 删除节点
+     * @param component
+     */
     void remove(Component component);
 
+    /**
+     * 获取子节点
+     * @param index
+     * @return
+     */
     Component getChild(int index);
 
+    /**
+     * 获取节点信息
+     */
     void operation();
 
 }

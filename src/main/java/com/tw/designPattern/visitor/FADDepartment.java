@@ -11,7 +11,7 @@ public class FADDepartment implements Department{
         String name = manageEmployee.getName();
         int totalWorkTime = manageEmployee.getTotalWorkTime();
         double totalWage = manageEmployee.getTotalWage();
-        System.out.println("管理层：" + name + "本月工作时长：" + totalWorkTime + "，小时。本月薪资：" + totalWage + "元");
+        System.out.println("管理层：" + name + "本月工作时长：" + totalWorkTime + "小时。本月薪资：" + totalWage + "元");
     }
 
     @Override
@@ -19,6 +19,6 @@ public class FADDepartment implements Department{
         String name = commonEmployee.getName();
         int totalWorkTime = commonEmployee.getTotalWorkTime();
         double totalWage = commonEmployee.getTotalWage();
-        System.out.println("普通员工：" + name + "本月工作时长：" + totalWorkTime + "，小时。本月薪资：" + totalWage + "元");
+        System.out.println("普通员工：" + name + "本月工作时长：" + totalWorkTime + "小时。本月薪资：" + totalWage + "元");
     }
 }

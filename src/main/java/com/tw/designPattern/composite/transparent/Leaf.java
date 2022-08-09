@@ -1,21 +1,24 @@
 package com.tw.designPattern.composite.transparent;
 
-public class Leaf implements Component{
+/**
+ * 树叶节点
+ */
+public class Leaf implements Component {
 
     String name;
 
-    public Leaf(String name){
+    public Leaf(String name) {
         this.name = name;
     }
 
     @Override
     public void add(Component component) {
-
+        throw new RuntimeException("叶子节点没有添加功能");
     }
 
     @Override
     public void remove(Component component) {
-
+        throw new RuntimeException("叶子节点没有删除功能");
     }
 
     @Override

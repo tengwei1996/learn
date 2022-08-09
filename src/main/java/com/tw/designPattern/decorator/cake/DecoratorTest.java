@@ -3,14 +3,14 @@ package com.tw.designPattern.decorator.cake;
 public class DecoratorTest {
 
     public static void main(String[] args) {
-        Cake cake = new CommonCake();// 1
-        cake = new Decorator(cake);// 2
+        Cake cake = new CommonCake();
+        cake = new Decorator(cake);
         System.out.println(cake.getCakeDesc() + " 价格： " + cake.getPrice());
-        cake = new MangoCakeDecorator(cake);// 3
+        cake = new MangoCakeDecorator(cake);
         System.out.println(cake.getCakeDesc() + " 价格： " + cake.getPrice());
-        cake = new MangoCakeDecorator(cake);// 4
+        cake = new MangoCakeDecorator(cake);
         System.out.println(cake.getCakeDesc() + " 价格： " + cake.getPrice());
-        cake = new GrapesCakeDecorator(cake); // 5
+        cake = new GrapesCakeDecorator(cake);
         System.out.println(cake.getCakeDesc() + " 价格： " + cake.getPrice());
     }
 }

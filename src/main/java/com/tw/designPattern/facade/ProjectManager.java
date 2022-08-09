@@ -1,5 +1,8 @@
 package com.tw.designPattern.facade;
 
+/**
+ * 项目经理 (子系统角色)
+ */
 public class ProjectManager extends Worker{
 
     public ProjectManager(String name,String job){

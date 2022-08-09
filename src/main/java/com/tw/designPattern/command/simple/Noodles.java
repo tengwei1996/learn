@@ -1,18 +1,19 @@
 package com.tw.designPattern.command.simple;
 
 /**
- * 面条（具体命令）
+ * 面条 具体命令类
  */
 public class Noodles implements Breakfast{
 
-    private NoodlesChef receiver;
+    private Chef receiver;
 
     public Noodles(){
-        receiver = new NoodlesChef();
+        receiver = new Chef();
     }
 
     @Override
-    public void cooking() {
-        receiver.cooking();
+    public void cook() {
+        receiver.cookNoodles();
+        System.out.println("面条真好吃，下次还吃！");
     }
 }

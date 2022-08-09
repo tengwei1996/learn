@@ -1,25 +1,34 @@
 package com.tw.designPattern.command.simple;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
- * 服务原（调用者）
+ * 服务员 调用者/请求者
  */
 public class Waiter {
 
-    private Breakfast hunTun,noodles;
+    List<Breakfast> breakfastList = new ArrayList<>();
 
-    public void setHunTun(Breakfast hunTun) {
-        this.hunTun = hunTun;
+    public Waiter(List<Breakfast> breakfastList){
+        this.breakfastList = breakfastList;
     }
 
-    public void setNoodles(Breakfast noodles) {
-        this.noodles = noodles;
+    /**
+     * 早餐只吃一样
+     * @param breakfast
+     */
+    public void eatBreakfast(Breakfast breakfast){
+        breakfast.cook();
     }
 
-    public void chooseHunTun(){
-        hunTun.cooking();
+    /**
+     * 早餐吃好多个的(相当于命令宏)
+     */
+    public void earMoreBreakfast(){
+        this.breakfastList.stream().forEach(breakfast -> {
+            breakfast.cook();
+        });
     }
 
-    public void chooseNoodles(){
-        noodles.cooking();
-    }
 }

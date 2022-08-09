@@ -1,6 +1,10 @@
 package com.tw.designPattern.chainOfResponsibility.approve;
 
+/**
+ * 抽象处理则
+ */
 public interface ApproveHandler {
 
-    public void handleRequest();
+    void handleRequest();
+
 }

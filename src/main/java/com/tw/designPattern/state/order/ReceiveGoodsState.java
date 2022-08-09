@@ -1,5 +1,8 @@
 package com.tw.designPattern.state.order;
 
+/**
+ * 订单已签收 具体状态角色
+ */
 public class ReceiveGoodsState extends OrderState{
 
     public ReceiveGoodsState(OrderContext context) {

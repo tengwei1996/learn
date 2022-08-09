@@ -1,5 +1,8 @@
 package com.tw.designPattern.flyweight.compositeFlyweight;
 
+/**
+ * 抽象享元角色
+ */
 public interface Flyweight {
 
     /**

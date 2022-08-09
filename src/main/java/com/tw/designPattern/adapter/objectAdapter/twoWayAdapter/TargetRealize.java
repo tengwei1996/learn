@@ -1,7 +1,7 @@
 package com.tw.designPattern.adapter.objectAdapter.twoWayAdapter;
 
 /**
- * 目标实现
+ * 目标实现(Target)
  */
 public class TargetRealize implements TwoWayTarget{
 

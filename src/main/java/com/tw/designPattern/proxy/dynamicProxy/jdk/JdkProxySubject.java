@@ -3,6 +3,9 @@ package com.tw.designPattern.proxy.dynamicProxy.jdk;
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 
+/**
+ * 代理类
+ */
 public class JdkProxySubject implements InvocationHandler {
 
     //这个就是我们要代理的真实对象

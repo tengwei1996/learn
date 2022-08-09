@@ -1,7 +1,7 @@
 package com.tw.designPattern.facade;
 
 /**
- * 开发经理
+ * 开发经理 (子系统角色)
  */
 public class DevelopManager extends Worker{
 

@@ -29,9 +29,9 @@ package com.tw.designPattern.iterator;
  */
 
 /**
- * 抽象聚合
+ * 抽象聚合角色
  */
-public interface Aggregate {
+public interface Aggregate<T> {
 
     void add(Object obj);
 

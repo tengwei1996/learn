@@ -1,7 +1,7 @@
 package com.tw.designPattern.adapter.objectAdapter;
 
 /**
- * 电能适配器
+ * 适配器(Adapter)电能适配器
  */
 public class ElectricAdapter implements Motor{
 

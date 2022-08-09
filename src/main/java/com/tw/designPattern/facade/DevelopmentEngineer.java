@@ -1,5 +1,8 @@
 package com.tw.designPattern.facade;
 
+/**
+ * 开发攻城狮 (子系统角色)
+ */
 public class DevelopmentEngineer extends Worker{
 
     public DevelopmentEngineer(String name,String job){

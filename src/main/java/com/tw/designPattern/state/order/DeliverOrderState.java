@@ -1,5 +1,8 @@
 package com.tw.designPattern.state.order;
 
+/**
+ * 订单已发货 具体状态角色
+ */
 public class DeliverOrderState extends OrderState{
 
     public DeliverOrderState(OrderContext context) {
@@ -13,6 +16,7 @@ public class DeliverOrderState extends OrderState{
 
     @Override
     public void deliverGoods() {
+        this.context.setState(new ReceiveGoodsState(this.context));
         System.out.println("商品已发货！请注意查收！");
     }
 

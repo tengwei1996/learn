@@ -5,5 +5,5 @@ package com.tw.designPattern.adapter.classAdapter;
  */
 public interface Target {
 
-    public void request();
+    void request();
 }
